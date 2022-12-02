@@ -9,11 +9,13 @@ body {
     margin: 0px;
 }
 #dashboard {
-    background-color: aliceblue;
+    background-color: rgb(198, 212, 224);
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: .5fr 4fr;
+    min-width: 500px;
     width: 100vw;
+    height: 70vh;
 }
 #selector-one {
     margin-top: 25px;
@@ -26,27 +28,98 @@ body {
     flex-direction: column;
 }
 ul, li{
+    justify-content: center;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    margin-bottom: 10px;
+}
+li {
+    display: flex;
+    justify-content: flex-start;
+}
+li > img {
+    margin-right: 15px;
+}
+img {
+    display: block;
+    padding: none;
+    margin: none;
 }
 a {
+    display: block;
+    color: white;
     text-decoration: none;
 }
 #header {
     background-color: white;
     grid-column: 2 / 4;
     box-shadow: 1px 1px 5px grey;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+#magnify{
+    color: black;
+}
+#search {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin: 20px 0px 0px 30px;
+}
+#search-bar {
+    background-color: rgb(198, 212, 224);
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+}
+#profile {
+    background-color: white;
+    padding-right: 10px;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+}
+#notification {
+    margin-right: 15px;
+}
+#user{
+    background-color: white;
+    margin: 0px 0px 10px 30px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+#social-buttons {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: rgb(66, 148, 214);
+    border: none;
+    border-radius: 15px;
+    margin: 5px;
+    color: white;
+    height: 25px;
+    width: 75px;
 }
 #nav {
+    color: white;
     padding: 10px;
-    background-color: steelblue;
+    background-color: rgb(66, 148, 214);
     grid-column: 1 / 2;
     grid-row: 1 / 4;
 }
 #projects {
     display: grid;
     grid-template-rows: 1fr 10fr;
+    min-height: ;
 }
 #projects-label {
     display: flex;
@@ -55,7 +128,7 @@ a {
     padding-left: 10px;
 }
 #project-card-container {
-    background-color: aliceblue;
+    background-color: rgb(198, 212, 224);
     display: grid;
     grid-row: 2 / 3;
     margin: 5px;
@@ -68,12 +141,13 @@ a {
     display: grid;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    min-width: 150px;
+    height: 100%;
     border-radius: 5px;
     box-shadow: 1px 1px 5px gray;
 }
 #sidebar{
-    background-color: aliceblue;
+    background-color: rgb(198, 212, 224);
     display: grid;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
@@ -83,7 +157,7 @@ a {
     grid-template-rows: 1fr 1fr;
 }
 #announcements {
-    background-color: aliceblue;
+    background-color: rgb(198, 212, 224);;
     display: grid;
     grid-row: 1 / 2;
     grid-template-rows: 1fr 4fr;
@@ -97,10 +171,11 @@ a {
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 5px grey;
+    min-width: 75px;
 }
 
 #trending {
-    background-color: aliceblue;
+    background-color: rgb(198, 212, 224);
     display: grid;
     grid-row: 2 / 3;
     grid-template-rows: 1fr 4fr;

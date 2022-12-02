@@ -9,7 +9,23 @@
 </head>
 <body>
     <main id="dashboard">
-        <header id="header">header</header>
+        <header id="header">
+            <div id="search">
+                <img id='magnify' src="/Icons/magnify.png" style="width:18px;height:18px"/>
+                <input type="search" name="search-bar" id="search-bar">
+            </div>
+            <div id="profile">
+                <img id='notification' src="/Icons/bell-ring-outline.png" style="width:18px;height:18px"/>
+                Morgan Oakley
+            </div>
+            <div id="user">Hi there, Morgan Oakley (@morgan)</div>
+            <div id="social-buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </header>
+
         <article id="projects">
             <div id="projects-label">Your projects</div>
             <div id="project-card-container">
@@ -34,18 +50,45 @@
         <div id="nav">Dashboard
             <div id="selector-one">
                 <ul>
-                    <li class="link"><a href="">Home</a></li>
-                    <li class="link"><a href="">Profile</a></li>
-                    <li class="link"><a href="">Messages</a></li>
-                    <li class="link"><a href="">History</a></li>
-                    <li class="link"><a href="">Tasks</a></li>
-                    <li class="link"><a href="">Communities</a></li>
+                    <li class="link">
+                        <img src="/Icons/home.png" style="width:18px;height:18px"/>
+                        <a href="">Home</a>
+                    </li>
+                    <li class="link">
+                        <img src="/Icons/account-details.png" style="width:18px;height:18px"/>
+                        <a href="">Profile</a>
+                    </li>
+                    <li class="link">
+                        <img src="/Icons/message.png" style="width:18px;height:18px"/>
+                        <a href="">Messages</a>
+                    </li>
+                    <li class="link">
+                        <img src="/Icons/clock-time-three.png" style="width:18px;height:18px"/>
+                        <a href="">History</a>
+                    </li>
+                    <li class="link">
+                        <img src="/Icons/file-multiple.png" style="width:18px;height:18px"/>
+                        <a href="">Tasks</a>
+                    </li>
+                    <li class="link">
+                        <img src="/Icons/account-group.png" style="width:18px;height:18px"/>
+                        <a href="">Communities</a>
+                    </li>
                 </ul>
             </div>
             <div id="selector-two">
-                <a href="">Settings</a>
-                <a href="">Support</a>
-                <a href="">Privacy</a>
+                <li>
+                    <img src="/Icons/cog.png" style="width:18px;height:18px"/>
+                    <a href="">Settings</a>
+                </li>
+                <li>
+                    <img src="/Icons/help-box.png" style="width:18px;height:18px"/>
+                    <a href="">Support</a>
+                </li>
+                <li>
+                    <img src="/Icons/shield-check.png" style="width:18px;height:18px"/>
+                    <a href="">Privacy</a>
+                </li>
             </div>
         </div>
     </main>
