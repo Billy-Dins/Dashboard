@@ -95,6 +95,7 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 15px;
     background-color: white;
     margin: 0px 0px 0px 30px;
 }
@@ -124,7 +125,7 @@ button {
 #projects {
     background-color: rgb(198, 212, 224);
     display: grid;
-    padding: 5% 0 5% 5%;
+    padding: 10px 0 0 10px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     grid-template-rows: .5fr 10fr;
@@ -151,6 +152,7 @@ button {
     box-shadow: 1px 1px 5px gray;
     grid-template-columns: 7px 1fr;
     grid-template-rows: 1fr .2fr;
+    min-width: 180px;
 }
 .project-highlight {
     grid-row: 1 / 3;
@@ -184,16 +186,16 @@ button {
     display: grid;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    grid-template-rows: 55% 45%;
+    grid-template-rows: 50% 50%;
     grid-template-columns: 1fr;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 0px 20px;
 }
 #announcements {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     grid-template-rows: .5fr 4fr;
-    padding-top: 20px;
+    margin: 15px 0px 20px 0px; 
 }
 #announcements-label{
     padding-bottom: 7px;
@@ -219,6 +221,7 @@ h5 {
     display: grid;
     grid-row: 2 / 3;
     grid-template-rows: 1fr 9fr;
+    margin-top: 18px;
 }
 #trending-label {
     padding-bottom: 7px;
@@ -232,5 +235,5 @@ h5 {
     border-radius: 5px;
     box-shadow: 1px 1px 5px grey;
     padding: 15px;
-    height: 80%;
+    height: 55%;
 }
